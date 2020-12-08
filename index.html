@@ -2,16 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"
+    />
     <title>Document</title>
     <style>
-        table{
-            border-spacing:20px
-        }
+      table {
+        border-spacing: 20px;
+      }
+      img {
+        max-width: 100%;
+      }
     </style>
   </head>
   <body>
-    <h1>林宥嘉</h1>
+    <nav>
+      <ol>
+        <li><a href="#show">个人简介</a></li>
+        <li><a href="#important">重要事件</a></li>
+        <li><a href="#glory">成就和荣誉</a></li>
+        <li><a href="#work">主要作品</a></li>
+        <li><a href="#pic">生活照</a></li>
+      </ol>
+    </nav>
+    <h1 id="show">林宥嘉</h1>
     <p>
       林宥嘉（Yoga
       Lin），1987年7月1日出生于台湾省屏东县，中国台湾流行乐男歌手、音乐制作人、演员，毕业于国立东华大学。
@@ -29,7 +44,7 @@
         2012年，发行第四张音乐专辑《大小说家》，获得中华音乐人交流协会“年度十大优良专辑”，并凭该专辑入围第24届台湾金曲奖最佳国语男歌手
       </li>
     </ul>
-    <h2>成就和荣誉</h2>
+    <h2 id="glory">成就和荣誉</h2>
     <ol>
       <li>
         2008-12 第1届音乐风云榜新人盛典 - 年度港台最佳新人奖[106] （获奖）
@@ -57,7 +72,7 @@
       </li>
       <li>Hito流行音乐奖 - HITO声猛新人 （获奖）</li>
     </ol>
-    <h2>主要作品</h2>
+    <h2 id="work">主要作品</h2>
     <table>
       <thead>
         <tr>
@@ -108,7 +123,9 @@
         </tr>
       </tbody>
     </table>
-    <h2>生活照</h2>
-    <img src="./下载.jpeg" alt="美照">
+    <h2 id="pic">生活照</h2>
+    <a href="./下载.jpeg" target="_blank"
+      ><img src="./下载.jpeg" alt="美照"
+    /></a>
   </body>
 </html>
